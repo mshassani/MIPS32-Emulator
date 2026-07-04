@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(
         src/memory
         src/registers
+        src/alu
 )
 
 # Memory tests
@@ -21,4 +22,11 @@ add_executable(
         registers_test
         test/registers_test.cpp
         src/registers/registers.cpp
+)
+
+# ALU tests
+add_executable(
+        alu_test
+        test/alu_test.cpp
+        src/alu/alu.cpp
 )
