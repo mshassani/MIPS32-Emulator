@@ -8,6 +8,7 @@ include_directories(
         src/memory
         src/registers
         src/alu
+        src/decoder
 )
 
 # Memory tests
@@ -29,4 +30,11 @@ add_executable(
         alu_test
         test/alu_test.cpp
         src/alu/alu.cpp
+)
+
+# Decoder Tests
+add_executable(
+        decoder_test
+        test/decoder_test.cpp
+        src/decoder/decoder.cpp
 )
