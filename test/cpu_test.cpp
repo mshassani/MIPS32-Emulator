@@ -172,6 +172,74 @@ int main() {
     assert(cpu.getMemory(100) == 0xCAFEBABE);
     std::cout << "[PASS] SW\n";
 
+    //=======================================================
+    // Test 9: BEQ
+    //=======================================================
+
+    /*
+     * Beq Taken
+     */
+
+    cpu.reset();
+
+    // $t0 = 10
+    cpu.setRegister(8, 10);
+
+    // $t1 = 10
+    cpu.setRegister(9, 10);
+
+    // beq $t0,$t1,1
+    cpu.loadInstruction(0x00000000, 0x11090001);
+
+    cpu.step();
+
+    // PC = 0 + 4 + (1 << 2) = 8
+    assert(cpu.getPc() == 8);
+
+    std::cout << "[PASS] BEQ Taken\n";
+
+    //=============================================================
+
+    /*
+     * Beq Not Taken
+     */
+
+    cpu.reset();
+
+    cpu.setRegister(8, 10);
+    cpu.setRegister(9, 20);
+
+    // beq $t0,$t1,1
+    cpu.loadInstruction(0x00000000, 0x11090001);
+
+    cpu.step();
+
+    // PC + 4 = 4
+    assert(cpu.getPc() == 4);
+
+    std::cout << "[PASS] BEQ Not Taken\n";
+
+    //===============================================================
+
+    /*
+     * Beq Backward
+     */
+
+    cpu.reset();
+
+    cpu.setRegister(8, 5);
+    cpu.setRegister(9, 5);
+
+    // beq $t0,$t1,-1
+    cpu.loadInstruction(0x00000000, 0x1109FFFF);
+
+    cpu.step();
+
+    // PC = 0 + 4 - 4 = 0
+    assert(cpu.getPc() == 0);
+
+    std::cout << "[PASS] BEQ Backward\n";
+
 
 
 

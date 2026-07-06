@@ -70,6 +70,10 @@ void CPU::step() {
 
   aluOutput = alu.execute(signals.aluOperation, A, operandB);
 
+  if (signals.branch && aluOutput.zero) {
+    registers.setPc(pc + 4 + (static_cast<int32_t>(static_cast<int16_t>(decoded.immediate)) << 2));
+  }
+
   //================================
   // 5- write back
   //================================
