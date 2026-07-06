@@ -24,34 +24,8 @@ This project follows the architecture presented in standard Computer Architectur
 
 ## Implemented Architecture
 
-```
-                +----------------------+
-                |       Memory         |
-                +----------+-----------+
-                           |
-                           | Fetch
-                           v
-                +----------------------+
-                |      Decoder         |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                |    Control Unit      |
-                +----------+-----------+
-                           |
-           +---------------+---------------+
-           |                               |
-           v                               v
- +---------------------+         +----------------+
- |    Register File    |         |      ALU       |
- +----------+----------+         +-------+--------+
-            |                            |
-            +------------+---------------+
-                         |
-                         v
-                   Write Back
-```
+<img width="1217" height="699" alt="image" src="https://github.com/user-attachments/assets/c37c012e-ce92-435e-b1e9-a15ee79cd9d4" />
+
 
 ---
 
