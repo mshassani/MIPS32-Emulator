@@ -148,4 +148,4 @@ Current test coverage includes:
 
 **Work in Progress**
 
-The first MVP successfully executes basic R-Type instructions using a complete fetch → decode → execute → write-back cycle.
+The first MVP successfully executes basic R-Type, I-Type and J-Type instructions using a complete fetch → decode → execute → write-back cycle.
