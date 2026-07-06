@@ -46,19 +46,13 @@ This project follows the architecture presented in standard Computer Architectur
 
 ### I-Type
 
-Control signals implemented for:
-
 - LW
 - SW
 - BEQ
 
 ### J-Type
 
-Control signals implemented for:
-
 - J
-
-> Memory access and branching will be completed in the next milestone.
 
 ---
 
@@ -100,7 +94,7 @@ test/
 
 - [x] Load/Store execution
 - [x] Branch execution
-- [ ] Jump execution
+- [x] Jump execution
 - [ ] Program Loader
 
 ### Phase 3
