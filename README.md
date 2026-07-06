@@ -124,7 +124,7 @@ test/
 
 ### Phase 2
 
-- [ ] Load/Store execution
+- [x] Load/Store execution
 - [ ] Branch execution
 - [ ] Jump execution
 - [ ] Program Loader
