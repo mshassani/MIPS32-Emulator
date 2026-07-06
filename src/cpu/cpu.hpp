@@ -20,6 +20,7 @@ class CPU {
 
         uint32_t getRegister(uint8_t reg) const;
         uint32_t getPc() const;
+        uint32_t getMemory(uint32_t address);
 
         void step();
         void reset();
