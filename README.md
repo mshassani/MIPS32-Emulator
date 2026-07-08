@@ -95,7 +95,7 @@ test/
 - [x] Load/Store execution
 - [x] Branch execution
 - [x] Jump execution
-- [ ] Program Loader
+- [x] Program Loader
 
 ### Phase 3
 
