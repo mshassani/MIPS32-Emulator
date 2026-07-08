@@ -67,7 +67,7 @@ This project follows the architecture presented in standard Computer Architectur
 - [x] Control Unit
 - [x] CPU Core MVP
 
-### Phase 2
+### Phase 2 (Completed)
 
 - [x] Load/Store execution
 - [x] Branch execution
