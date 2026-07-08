@@ -56,29 +56,6 @@ This project follows the architecture presented in standard Computer Architectur
 
 ---
 
-## Project Structure
-
-```
-src/
-│
-├── alu/
-├── control/
-├── cpu/
-├── decoder/
-├── memory/
-└── registers/
-
-test/
-├── alu_test.cpp
-├── control_test.cpp
-├── cpu_test.cpp
-├── decoder_test.cpp
-├── memory_test.cpp
-└── registers_test.cpp
-```
-
----
-
 ## Development Roadmap
 
 ### Phase 1 (Completed)
