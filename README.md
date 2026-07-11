@@ -18,7 +18,6 @@ This project follows the architecture presented in standard Computer Architectur
 -  Control Unit
 -  Single-Cycle CPU Core
 -  Unit Tests for every module
--  First executable CPU MVP
 
 ---
 
