@@ -56,62 +56,6 @@ This project follows the architecture presented in standard Computer Architectur
 
 ---
 
-## Project Structure
-
-```
-src/
-│
-├── alu/
-├── control/
-├── cpu/
-├── decoder/
-├── memory/
-└── registers/
-
-test/
-├── alu_test.cpp
-├── control_test.cpp
-├── cpu_test.cpp
-├── decoder_test.cpp
-├── memory_test.cpp
-└── registers_test.cpp
-```
-
----
-
-## Development Roadmap
-
-### Phase 1 (Completed)
-
-- [x] Memory
-- [x] Register File
-- [x] ALU
-- [x] Decoder
-- [x] Control Unit
-- [x] CPU Core MVP
-
-### Phase 2
-
-- [x] Load/Store execution
-- [x] Branch execution
-- [x] Jump execution
-- [ ] Program Loader
-
-### Phase 3
-
-- [ ] MIPS Assembler
-- [ ] ELF/Binary Loader
-- [ ] Full instruction support
-
-### Phase 4
-
-- [ ] Pipeline implementation
-- [ ] Hazard detection
-- [ ] Forwarding Unit
-- [ ] Cache simulation
-
----
-
 ## Testing
 
 Every module is tested independently before integration.
@@ -142,10 +86,4 @@ Current test coverage includes:
 - Simulate the execution of MIPS32 machine instructions.
 - Provide a solid foundation for future pipeline and cache implementations.
 
----
 
-## Status
-
-**Work in Progress**
-
-The first MVP successfully executes basic R-Type, I-Type and J-Type instructions using a complete fetch → decode → execute → write-back cycle.
